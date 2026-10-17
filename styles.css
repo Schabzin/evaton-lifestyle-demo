@@ -1,0 +1,226 @@
+/* Evaton Lifestyle - pool & sun palette (Separaka sample) */
+:root {
+    --water: #0b3c5d;      /* deep water: text, header */
+    --pool: #0e6f8c;       /* pool blue: buttons (#1286a8 failed: 4.2:1 with white) */
+    --sun: #f59e0b;        /* sun orange: accent */
+    --sand: #fdf6ec;       /* page background */
+    --white: #ffffff;
+    --muted: #5b6b78;
+    --error: #8b0000;
+    --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    background: var(--sand);
+    color: var(--water);
+    line-height: 1.55;
+}
+
+.sample-banner {
+    background: var(--sun);
+    color: var(--water);
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--water);
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-bottom: 4px solid var(--sun);
+}
+
+.brand {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.brand span { color: var(--sun); }
+
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+
+.site-header nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.site-header nav a:hover { color: var(--sun); }
+
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+section {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(11, 60, 93, 0.08);
+}
+
+.hero {
+    background: linear-gradient(160deg, var(--water) 0%, var(--pool) 100%);
+    color: var(--white);
+    text-align: left;
+    padding: 2.2rem 1.4rem;
+}
+
+.hero-kicker {
+    margin: 0;
+    color: var(--sun);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 { font-size: 2.2rem; line-height: 1.15; margin: 0.4rem 0; }
+
+.tagline { font-size: 1.05rem; max-width: 34ch; }
+
+.next-event {
+    margin: 1.2rem 0;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.12);
+    border-left: 5px solid var(--sun);
+    font-weight: 600;
+}
+
+.next-event:empty { display: none; }
+
+h2 { margin-top: 0; color: var(--water); }
+
+.note { color: var(--muted); font-size: 0.9rem; }
+
+.event-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+
+.event-list li {
+    display: grid;
+    grid-template-columns: 4.2rem 1fr;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid #e6edf2;
+    border-radius: 10px;
+}
+
+.event-list li.is-next { border: 2px solid var(--pool); background: #eef8fb; }
+
+.event-date {
+    background: var(--water);
+    color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.35rem 0;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.event-date small { display: block; font-size: 0.7rem; color: var(--sun); text-transform: uppercase; }
+
+.event-title { font-weight: 700; }
+
+.event-detail { color: var(--muted); font-size: 0.9rem; }
+
+.price-table { width: 100%; border-collapse: collapse; }
+
+.price-table th, .price-table td { text-align: left; padding: 0.6rem; border-bottom: 1px solid #e6edf2; }
+
+.price-table th { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; }
+
+.price-table td:last-child { font-weight: 700; text-align: right; }
+
+.booking-form { display: grid; gap: 0.4rem; max-width: 420px; }
+
+.booking-form label { font-weight: 600; margin-top: 0.4rem; }
+
+.booking-form input,
+.booking-form select {
+    font-size: 1rem;
+    padding: 0.65rem;
+    border: 1px solid #c9d6df;
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--water);
+}
+
+.booking-form input:focus,
+.booking-form select:focus { outline: 3px solid var(--sun); border-color: var(--pool); }
+
+.form-error { color: var(--error); font-weight: 700; min-height: 1.2em; margin: 0.3rem 0; }
+
+.btn {
+    display: inline-block;
+    background: var(--pool);
+    color: var(--white);
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover { background: var(--water); }
+
+.btn-sun { background: var(--sun); color: var(--water); }
+
+.btn-sun:hover { background: var(--white); }
+
+.btn-outline { background: transparent; color: var(--pool); border: 2px solid var(--pool); }
+
+.btn-outline:hover { background: var(--pool); color: var(--white); }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.8rem; }
+
+.tile { margin: 0; }
+
+.tile-box {
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.tile figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.3rem; }
+
+.t-pool   { background: var(--pool); }
+.t-braai  { background: #b45309; }
+.t-shade  { background: #2f6f4e; }
+.t-castle { background: var(--sun); color: var(--water); }
+.t-night  { background: var(--water); }
+
+.rules { padding-left: 1.2rem; }
+
+.rules li { margin-bottom: 0.4rem; }
+
+.site-footer { text-align: center; color: var(--muted); padding: 1rem; font-size: 0.85rem; }
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    section { padding: 1.1rem; }
+}

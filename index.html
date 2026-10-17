@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evaton Lifestyle: pool, braai and family days in Mafatsane, Evaton.">
+    <title>Evaton Lifestyle | Pool, Braai &amp; Events</title>
+    <meta name="robots" content="noindex">
+    <meta name="color-scheme" content="only light">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sample-banner">Sample website prepared by Separaka Holdings. Not the official site.</div>
+
+    <header class="site-header">
+        <a href="#top" class="brand">Evaton Lifestyle</a>
+        <nav>
+            <a href="#events">Events</a>
+            <a href="#entry">Entry</a>
+            <a href="#book">Book</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#find-us">Find us</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <section class="hero">
+            <h1>Evaton Lifestyle</h1>
+            <p class="tagline">Pool, braai and good times for the whole family.</p>
+            <div id="next-event" class="next-event"></div>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming events</h2>
+            <p class="note">Sample events for demonstration.</p>
+            <ul id="events-list" class="events"></ul>
+        </section>
+
+        <section id="entry">
+            <h2>Entry &amp; pool</h2>
+            <p class="note">Sample prices for demonstration. Final prices confirmed by Evaton Lifestyle.</p>
+            <table id="entry-table"></table>
+        </section>
+
+        <section id="book">
+            <h2>Book a day, table or event</h2>
+            <p>Fill in the details and we'll open WhatsApp with your message ready to send.</p>
+
+            <form id="booking-form" class="booking-form" novalidate>
+                <label for="book-name">Your name</label>
+                <input id="book-name" type="text" autocomplete="name">
+
+                <label for="book-date">Date</label>
+                <input id="book-date" type="date">
+
+                <label for="book-type">What would you like to book?</label>
+                <select id="book-type">
+                    <option value="Day visit">Day visit</option>
+                    <option value="Pool day">Pool day</option>
+                    <option value="Braai area">Braai area</option>
+                    <option value="Tent and tables">Tent and tables</option>
+                    <option value="Private event">Private event (birthday, party)</option>
+                </select>
+
+                <label for="book-size">How many people?</label>
+                <input id="book-size" type="number" min="1" max="200" inputmode="numeric">
+
+                <p id="book-error" class="form-error" role="alert"></p>
+
+                <button type="submit" class="btn">Send on WhatsApp</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Photos coming soon. We never share photos of children without their parents' permission.</p>
+
+            <div class="gallery-grid">
+                <figure class="tile">
+                    <div class="tile-box bg-thu">The pool</div>
+                    <figcaption>Cool off on hot days</figcaption>
+                </figure>
+                <figure class="tile">
+                    <div class="tile-box bg-mon">Braai area</div>
+                    <figcaption>Bring the meat, we bring the fire</figcaption>
+                </figure>
+                <figure class="tile">
+                    <div class="tile-box bg-tue">Tents &amp; tables</div>
+                    <figcaption>Shade for the whole family</figcaption>
+                </figure>
+                <figure class="tile">
+                    <div class="tile-box bg-fri">Jumping castle</div>
+                    <figcaption>The kids' favourite</figcaption>
+                </figure>
+                <figure class="tile">
+                    <div class="tile-box bg-wed">Events</div>
+                    <figcaption>Music, food and good vibes</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="find-us">
+            <h2>Find us</h2>
+            <p>1533 Union Rd, Mafatsane, Evaton, 1984</p>
+            <p><a href="tel:+27662047846">066 204 7846</a></p>
+            <p>
+                <a class="btn btn-directions"
+                   href="https://www.google.com/maps/dir/?api=1&amp;destination=1533%20Union%20Rd%2C%20Mafatsane%2C%20Evaton%2C%201984"
+                   target="_blank" rel="noopener">Get directions</a>
+            </p>
+        </section>
+
+        <section id="rules">
+            <h2>House rules</h2>
+            <ul class="events">
+                <li>Children must be supervised by an adult at the pool at all times.</li>
+                <li>No glass bottles in the pool area.</li>
+                <li>Please drink responsibly. No alcohol sold to persons under 18.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year-now"></span> Evaton Lifestyle</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

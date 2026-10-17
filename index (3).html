@@ -14,7 +14,7 @@
     <div class="sample-banner">Sample website prepared by Separaka Holdings. Not the official site.</div>
 
     <header class="site-header">
-        <a href="#top" class="brand">Evaton Lifestyle</a>
+        <a href="#top" class="brand">Evaton <span>Lifestyle</span></a>
         <nav>
             <a href="#events">Events</a>
             <a href="#entry">Entry</a>
@@ -27,26 +27,28 @@
     <main id="top">
 
         <section class="hero">
-            <h1>Evaton Lifestyle</h1>
-            <p class="tagline">Pool, braai and good times for the whole family.</p>
+            <p class="hero-kicker">Mafatsane, Evaton</p>
+            <h1>Pool. Braai. Good times.</h1>
+            <p class="tagline">Bring the family, bring the meat. We bring the water, the shade and the vibe.</p>
             <div id="next-event" class="next-event"></div>
+            <a href="#book" class="btn btn-sun">Book your day</a>
         </section>
 
         <section id="events">
             <h2>Upcoming events</h2>
             <p class="note">Sample events for demonstration.</p>
-            <ul id="events-list" class="events"></ul>
+            <ul id="events-list" class="event-list"></ul>
         </section>
 
         <section id="entry">
             <h2>Entry &amp; pool</h2>
             <p class="note">Sample prices for demonstration. Final prices confirmed by Evaton Lifestyle.</p>
-            <table id="entry-table"></table>
+            <table id="entry-table" class="price-table"></table>
         </section>
 
         <section id="book">
             <h2>Book a day, table or event</h2>
-            <p>Fill in the details and we'll open WhatsApp with your message ready to send.</p>
+            <p>Fill in the details and WhatsApp opens with your message ready to send.</p>
 
             <form id="booking-form" class="booking-form" novalidate>
                 <label for="book-name">Your name</label>
@@ -57,11 +59,11 @@
 
                 <label for="book-type">What would you like to book?</label>
                 <select id="book-type">
-                    <option value="Day visit">Day visit</option>
-                    <option value="Pool day">Pool day</option>
-                    <option value="Braai area">Braai area</option>
-                    <option value="Tent and tables">Tent and tables</option>
-                    <option value="Private event">Private event (birthday, party)</option>
+                    <option value="a day visit">Day visit</option>
+                    <option value="a pool day">Pool day</option>
+                    <option value="a braai area">Braai area</option>
+                    <option value="a tent and tables">Tent and tables</option>
+                    <option value="a private event (birthday or party)">Private event (birthday, party)</option>
                 </select>
 
                 <label for="book-size">How many people?</label>
@@ -79,23 +81,23 @@
 
             <div class="gallery-grid">
                 <figure class="tile">
-                    <div class="tile-box bg-thu">The pool</div>
+                    <div class="tile-box t-pool">The pool</div>
                     <figcaption>Cool off on hot days</figcaption>
                 </figure>
                 <figure class="tile">
-                    <div class="tile-box bg-mon">Braai area</div>
+                    <div class="tile-box t-braai">Braai area</div>
                     <figcaption>Bring the meat, we bring the fire</figcaption>
                 </figure>
                 <figure class="tile">
-                    <div class="tile-box bg-tue">Tents &amp; tables</div>
+                    <div class="tile-box t-shade">Tents &amp; tables</div>
                     <figcaption>Shade for the whole family</figcaption>
                 </figure>
                 <figure class="tile">
-                    <div class="tile-box bg-fri">Jumping castle</div>
+                    <div class="tile-box t-castle">Jumping castle</div>
                     <figcaption>The kids' favourite</figcaption>
                 </figure>
                 <figure class="tile">
-                    <div class="tile-box bg-wed">Events</div>
+                    <div class="tile-box t-night">Events</div>
                     <figcaption>Music, food and good vibes</figcaption>
                 </figure>
             </div>
@@ -106,7 +108,7 @@
             <p>1533 Union Rd, Mafatsane, Evaton, 1984</p>
             <p><a href="tel:+27662047846">066 204 7846</a></p>
             <p>
-                <a class="btn btn-directions"
+                <a class="btn btn-outline"
                    href="https://www.google.com/maps/dir/?api=1&amp;destination=1533%20Union%20Rd%2C%20Mafatsane%2C%20Evaton%2C%201984"
                    target="_blank" rel="noopener">Get directions</a>
             </p>
@@ -114,7 +116,7 @@
 
         <section id="rules">
             <h2>House rules</h2>
-            <ul class="events">
+            <ul class="rules">
                 <li>Children must be supervised by an adult at the pool at all times.</li>
                 <li>No glass bottles in the pool area.</li>
                 <li>Please drink responsibly. No alcohol sold to persons under 18.</li>
